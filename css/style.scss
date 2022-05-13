@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none;
+  }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+  
+  /*--------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+
+
+
+
+
+.menu {
+    height: 7%;
+
+    &__nav {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        width: 100%;
+        position: fixed;
+        position: relative;
+        
+    }
+
+    &__item {
+        margin: 0 50px;
+        
+    }
+}
+
+.header {
+    background-color: #beb097e9;
+    height: 93%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+       
+        font-size: 26px;
+        margin: 0px 100px 0;
+        padding: 20px 0 0 0;
+    }
+
+    &__description {
+        margin-top: 70px;
+    }
+
+
+
+	&__title {
+        font-size: 76px;
+        font-family: 'Russo One';
+        text-transform: uppercase;
+    }
+
+    &__title--brown {
+    color: rgb(103, 80, 80);
+    }
+
+    &__def {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        margin-top: 30px;
+    }
+
+    &__subtitle {
+        margin-top: 20px;
+        font-size: 48px;
+      
+    }
+
+    &__button {
+        width: 200px;
+        height: 70px;
+        font-size: 32px;
+        font-style: italic;
+        background-color: rgb(103, 80, 80);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        position: relative;
+    }
+    &__button:before {
+        border-radius: 50px;
+        content:' ';
+        position: absolute;
+        top: 0;
+        left: 0.5px;
+        width: 0;
+        height: 70px;
+        background: rgba(198, 169, 169, 0.316);
+        transition: 0.2s linear;
+        
+    }
+
+    &__button:hover:before {
+        width: 100%;
+        
+    }
+
+	&__img {
+		margin-top: 20px;
+    }
+
+
+}
+
+
+.about {
+    height: 100%;
+    background-color: rgb(198, 198, 191);
+		&__wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 50px;
+		}
+
+		&__img {
+            position: relative;
+		}
+        &__label {
+            position: absolute;
+            bottom: -35px;
+            right: -40px;
+            width: 250px;
+            height: 100px;
+            background-color: rgba(180, 179, 173, 0.86);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 26px;
+            font-family: 'Cuprum', sans-serif;
+            
+        }
+        &__clip img {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            transform: rotate(-90deg);
+        }
+
+        &__label-big{
+            margin-right: 10px;
+            font-size: 82px;
+            font-weight: bold;
+            color: rgb(61, 61, 58);
+        }
+
+        &__label-year{
+            
+            font-size: 36px;
+            
+            
+        }
+
+		&__description {
+            width: 50%;
+            font-size: 40px;
+            padding-top: 160px;
+            font-family: 'Cuprum', sans-serif;
+            
+        }
+}
+

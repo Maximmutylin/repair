@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cuprum&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.menu {
+  height: 7%;
+}
+
+.menu__nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 26px;
+  width: 100%;
+  position: fixed;
+  position: relative;
+}
+
+.menu__item {
+  margin: 0 50px;
+}
+
+.header {
+  background-color: #beb097e9;
+  height: 93%;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 26px;
+  margin: 0px 100px 0;
+  padding: 20px 0 0 0;
+}
+
+.header__description {
+  margin-top: 70px;
+}
+
+.header__title {
+  font-size: 76px;
+  font-family: 'Russo One';
+  text-transform: uppercase;
+}
+
+.header__title--brown {
+  color: #675050;
+}
+
+.header__def {
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  margin-top: 30px;
+}
+
+.header__subtitle {
+  margin-top: 20px;
+  font-size: 48px;
+}
+
+.header__button {
+  width: 200px;
+  height: 70px;
+  font-size: 32px;
+  font-style: italic;
+  background-color: #675050;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+.header__button:before {
+  border-radius: 50px;
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0.5px;
+  width: 0;
+  height: 70px;
+  background: rgba(198, 169, 169, 0.316);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.header__button:hover:before {
+  width: 100%;
+}
+
+.header__img {
+  margin-top: 20px;
+}
+
+.about {
+  height: 100%;
+  background-color: #c6c6bf;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+.about__img {
+  position: relative;
+}
+
+.about__label {
+  position: absolute;
+  bottom: -35px;
+  right: -40px;
+  width: 250px;
+  height: 100px;
+  background-color: rgba(180, 179, 173, 0.86);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 26px;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.about__clip img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.about__label-big {
+  margin-right: 10px;
+  font-size: 82px;
+  font-weight: bold;
+  color: #3d3d3a;
+}
+
+.about__label-year {
+  font-size: 36px;
+}
+
+.about__description {
+  width: 50%;
+  font-size: 40px;
+  padding-top: 160px;
+  font-family: 'Cuprum', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
